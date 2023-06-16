@@ -6,8 +6,9 @@
 trigger:
 - main
 
-pool:
-  vmImage: Default
+pool: 
+  name: Default
+  vmImage: LAPTOP-QIJC73OK
 
 steps:
 - task: NodeTool@0
