@@ -21,9 +21,10 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-appendCommitMessageToRunName:- task: PublishBuildArtifacts@1
+
+- task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'C:\Users\YASWANTH\Downloads\New folder'
+    PathtoPublish: '''C:\Users\YASWANTH\Downloads\New folder'''
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
-    TargetPath: 'C:\Users\YASWANTH\Downloads\New folder'
+    TargetPath: '''C:\Users\YASWANTH\Downloads\New folder'''
